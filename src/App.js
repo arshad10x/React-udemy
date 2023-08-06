@@ -11,8 +11,7 @@ function App() {
   return (
     <div className="App">
       {/* Template Literals*/}
-      <h1 style={style}>{`We are ${var1} ${var2}`}</h1>
-
+      <h1 style={style}>{`We are ${var1},${var2}`}</h1>
     </div>
   );
 }
