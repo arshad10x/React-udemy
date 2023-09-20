@@ -4,4 +4,4 @@ function Header(){
       <h1>Fast Pizza Restro</h1>
     )
   }
-  export default Header();
+  export default Header;
