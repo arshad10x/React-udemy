@@ -1,5 +1,5 @@
 import React from "react";
-import Pizza from './Pizza'
+import Pizza from './pizza'
 function Menu(){
     return(
       <>
