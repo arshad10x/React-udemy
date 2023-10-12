@@ -2,30 +2,30 @@ const Data=[
     {
         id:1,
         image:'../images/focaccia.jpeg',
-        des:'pizza'
+        des:'focaccia pizza'
     },
     {
         id:2,
         image:'../images/funghi.jpeg',
-        des:'pizza'
+        des:'funghi pizza'
 
     },
     {
         id:3,
         image:"../images/margherita.jpeg",
-        des:'pizza'
+        des:'margherita pizza'
 
     },
     {
         id:4,
         image:"../images/prosciutto.jpeg",
-        des:'pizza'
+        des:'prosciutto pizza'
 
     },
     {
         id:5,
         image:'../images/salamino.jpeg',
-        des:'pizza'
+        des:'salamino pizza'
 
     }
 ];
