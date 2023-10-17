@@ -11,9 +11,8 @@ function Footer(){
   // else alert('Sorry we are closed')
     return (
       <div>
-
-        {/* {new Date().toLocaleDateString()}.
-       We're currently open */}
+        <h2>We're currently open</h2>
+        <h3>{new Date().toLocaleDateString()}</h3>.
        
       </div>
     )

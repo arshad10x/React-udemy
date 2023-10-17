@@ -2,32 +2,36 @@
 // import Data from "./Data";
 // function Pizza() {
 //   return (
-//     <>
+//     <div className="pizza">
 //       {Data.map((data1) => (
-//         <div>
+//         <div >
+//           <div className="imgStyle">
+//           <img key={data1.id} src={data1.image} alt="/"  />
+//           </div>
 //           <h3>{data1.name}</h3>
-//           <img key={data1.id} src={data1.image} alt="/" />
 //           <p>{data1.ingredients}</p>
-//           <p>{data1.price}</p>
+//           <p>{data1.price+3+'$'}</p>
 //         </div>
 //       ))}
-//     </>
+    
+//     </div>
 //   );
-// }
+// } 
 // export default Pizza;
 
 
 //passing as props
 import React from "react";
-function Pizza(props){
+function Pizza({pizzaObj}){
   return(
-    <div>
+    <li className="pizza">
+     <img src={pizzaObj.image} alt={pizzaObj.name}/>
       <div>
-     <img src={props.photoName} alt={props.pimage}/></div>
-      <h3>{props.name}</h3>
-      <p>{props.ingedient}</p>
-      {console.log(props.pimage)}
+      <h3>{pizzaObj.name}</h3>
+      <p>{pizzaObj.ingredients}</p>
+      <p>{pizzaObj.price+3}</p>
     </div>
+    </li>
   )
 }
-export default Pizza
+export default Pizza;

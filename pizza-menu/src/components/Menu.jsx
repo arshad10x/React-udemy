@@ -1,18 +1,25 @@
 import React from "react";
-import Pizza from "./pizza";
-// import img from "../pizza/focaccia.jpeg"
+import Pizza  from "./pizza";
+import Data from './Data'
 function Menu() {
   return (
     <div className="menu">
       <h2>Our Menu</h2>
-      <Pizza
-        name="Pizza Funghi"
-        ingedient="Tomato, mozarella, spinach, and ricotta cheese"
-        // pimage={img}
-        photoName={require("../pizza/focaccia.jpeg")}
-        price="10"
-      />
+    
+     <ul className="pizzas">
+     {Data.map((pizza1)=>(
+        <>
+        <Pizza pizzaObj={pizza1} key={pizza1.name}/>
+        <Pizza pizzaObj={pizza1} key={pizza1.name}/>
+
+        </>
+        
+      ))}
+     </ul>
+     
+
     </div>
   );
 }
 export default Menu;
+

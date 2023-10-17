@@ -107,8 +107,16 @@ body {
   gap: 4.8rem;
 }
 
+.imgStyle img{
+  width: 100%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
 .pizza {
   display: flex;
+  flex-wrap: nowrap;
   gap: 3.2rem;
 }
 
