@@ -20,16 +20,19 @@
 // export default Pizza;
 
 
-//passing as props
+//passing as props  
 import React from "react";
 function Pizza({pizzaObj}){
+
+  // if(pizzaObj.soldOut) return null;
   return(
-    <li className="pizza">
+    <li className={`pizza ${pizzaObj.soldOut ? 'sold-out' : ''}`}>
      <img src={pizzaObj.image} alt={pizzaObj.name}/>
       <div>
       <h3>{pizzaObj.name}</h3>
       <p>{pizzaObj.ingredients}</p>
-      <p>{pizzaObj.price+3}</p>
+
+      <span>{pizzaObj.soldOut ? 'SOLD OUT' : pizzaObj.price}</span>
     </div>
     </li>
   )
